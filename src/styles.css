@@ -1,0 +1,94 @@
+/* === GLOBAL === */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Nunito Sans', sans-serif;
+  background-color: #e17055;
+}
+
+html, body, #root {
+  height: 100%;
+}
+
+#root {
+  margin: 12px;
+  padding: 12px;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.filter {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.filter input {
+  margin: 12px;
+  padding: 12px;
+  outline: none;
+  background-color: #ffeaa7;
+}
+
+#title {
+  color: #2d3436;
+}
+
+/* === LOADING COMPONENT === */
+
+.loading {
+  position: relative;
+  top: 50%;
+  width: 200px;
+  margin: 0 auto;
+  font-weight: 700;
+  font-size: 4em;
+}
+
+/* === APP COMPONENT / DATA === */
+
+.col-labels {
+  display: flex;
+  color: #636e72;
+}
+
+.col {
+  width: 300px;
+}
+
+.row {
+  display: flex;
+  color: #dfe6e9;
+}
+
+.row li {
+  width: 300px;
+}
+
+/* === MEDIA QUERIES === */
+
+@media only screen and (max-width: 400px) {
+
+  .col-labels {
+    font-size: 8px;
+  }
+
+  .row {
+    font-size: 8px;
+  }
+}
+
+@media only screen and (min-width: 401px) and (max-width: 800px) {
+
+  .col-labels {
+    font-size: 10px;
+  }
+
+  .row {
+    font-size: 10px;
+  }
+}
